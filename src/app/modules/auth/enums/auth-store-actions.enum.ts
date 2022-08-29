@@ -1,0 +1,18 @@
+export enum AuthStoreActions {
+  AUTHENTICATE_WITH_GOOGLE = '[Auth] -> AUTHENTICATE WITH GOOGLE',
+
+  CLEAR_ACTION_STATES = '[Auth] -> CLEAR ACTION STATES',
+
+  LOGIN_START = '[Auth] -> LOGIN START',
+  LOGIN = '[Auth] -> LOGIN',
+  LOGIN_FAILED = '[Auth] -> LOGIN FAILED',
+
+  LOGOUT = '[Auth] -> LOGOUT',
+
+  SIGNUP_START = '[Auth] -> SIGNUP START',
+  SIGNUP = '[Auth] -> SIGNUP',
+  SIGNUP_FAILED = '[Auth] -> SIGNUP FAILED',
+
+  FETCH_LOGGED_IN_USER = '[Auth] -> FETCH LOGGED IN USER',
+  SAVE_USER = '[Auth] -> SAVE USER'
+}

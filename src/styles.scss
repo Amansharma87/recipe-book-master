@@ -1,0 +1,81 @@
+@import "fonts";
+@import '~quill/dist/quill.core.css';
+@import '~quill/dist/quill.bubble.css';
+@import '~quill/dist/quill.snow.css';
+@import '~bootstrap/scss/bootstrap';
+
+*{
+  margin: 0;
+  padding: 0;
+  &::-webkit-scrollbar{
+    display: none;
+  }
+  div, span , p{
+    user-select: none;
+  }
+}
+
+.flex {
+  display: flex !important;
+}
+
+button:disabled{
+  cursor: not-allowed;
+}
+
+.pointer-none {
+  pointer-events: none;
+}
+
+#overlayDiv {
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.3);
+}
+
+#notifOverlay {
+  position: fixed;
+  z-index: 100000;
+  top: 30px;
+  right: 20px;
+  width: fit-content;
+  height: fit-content;
+}
+
+ngx-spinner {
+  .overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .loading-text {
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+      margin-top: 60px;
+
+      p {
+        font-size: 1.2rem;
+        font-family: 'Montserrat', 'Lato', sans-serif;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.recipe-block {
+  * {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  #notifOverlay {
+    top: 22px;
+  }
+}

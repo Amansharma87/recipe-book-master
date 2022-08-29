@@ -1,0 +1,23 @@
+<div class="navigation">
+  <input type="checkbox" [formControl]="drawerControl" class="navigation__checkbox" id="navi-toggle">
+
+  <label for="navi-toggle" class="navigation__button">
+    <span class="navigation__icon">&nbsp;</span>
+  </label>
+
+  <div class="navigation__background"></div>
+
+  <nav class="navigation__nav" [ngClass]="{'disable': !drawerControl.value}">
+    <ul class="navigation__list flex flex-column justify-content-center align-items-center">
+      <li class="navigation__item">
+        <a routerLink="" (click)="goToRecipes()" class="navigation__link">Recipes</a>
+      </li>
+      <li class="navigation__item extra-hover-width">
+        <a routerLink="" (click)="openLink('dashboard/shopping-list')" class="navigation__link">Shopping List</a>
+      </li>
+      <li class="navigation__item">
+        <a routerLink="" (click)="openLink('auth/logout')" class="navigation__link">Logout</a>
+      </li>
+    </ul>
+  </nav>
+</div>
