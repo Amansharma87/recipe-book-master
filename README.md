@@ -17,7 +17,7 @@ Password: recipe-book
 ## How to setup locally:-
 1.&nbsp; Clone the repository in your system using:
 ```
-git clone https://github.com/harsh863/recipe-book.git
+git clone https://github.com/Amansharma87/recipe-book-master
 ```
 
 2.&nbsp; Navigate to root directory of the project and run `npm install` in your terminal to install all required packages.
